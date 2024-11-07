@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Dashboard Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="dashboard">
+    <canvas id="tachometer"></canvas>
+    <canvas id="speedometer"></canvas>
+    <div id="center-display">
+      <p>Gear: <span id="gear-display">1</span></p>
+      <div id="notification"></div>
+    </div>
+    <!-- Dummy dashboard elements -->
+    <div id="dummy-elements">
+      <div class="gauge">
+        <p>Fuel</p>
+        <div class="gauge-display">F | E</div>
+      </div>
+      <div class="gauge">
+        <p>Temp</p>
+        <div class="gauge-display">C | H</div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

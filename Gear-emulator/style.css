@@ -1,0 +1,88 @@
+/* Set body background and remove margins */
+body {
+    margin: 0;
+    background-color: #1a1a1a; /* Dark background resembling a car dashboard */
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dashboard container */
+  #dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Tachometer and speedometer styling */
+  canvas {
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: auto;
+  }
+  
+  /* Center display styling */
+  #center-display {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #center-display p {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  #notification {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    font-size: 1.5em;
+    display: none; /* Hidden by default */
+  }
+  
+  /* Dummy dashboard elements styling */
+  #dummy-elements {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .gauge {
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .gauge p {
+    font-size: 1.2em;
+  }
+  
+  .gauge-display {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Adjust font sizes for smaller screens */
+  @media screen and (max-width: 600px) {
+    #center-display p {
+      font-size: 1.5em;
+    }
+  
+    #notification {
+      font-size: 1.2em;
+    }
+  
+    .gauge p {
+      font-size: 1em;
+    }
+  }
+  
